@@ -1,0 +1,8 @@
+entity\Details.class
+entity\BusinessLocation.class
+model\UserModel.class
+controller\AddLocationServlet.class
+model\UserRemote.class
+controller\Login.class
+controller\GetLocationsServlet.class
+controller\Register.class

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+body::before {
+    content: "";
+    background: url('../img/texture.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.7; /* Adjust opacity of the background image */
+}
+
+.logo-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.3; /* Adjust opacity of the logo */
+}
+
+.logo {
+    width: 200px; /* Adjust size of the logo */
+    height: auto;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    background: none; /*transparent background for content */
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, p {
+    margin: 0 0 20px;
+}
